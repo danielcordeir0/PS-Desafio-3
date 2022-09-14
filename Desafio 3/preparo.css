@@ -1,0 +1,103 @@
+#total-burg
+{
+    width: 1263px;
+    height: 772px;
+    background: #192939;
+    border-radius: 5px;
+    position: relative;
+    left: 88px;
+    top: 127px;
+    display: none;
+}
+
+#total-pastel
+{
+    width: 1263px;
+    height: 772px;
+    background: #192939;
+    border-radius: 5px;
+    position: relative;
+    left: 88px;
+    top: 127px;
+    display: none;
+}
+
+#total-churros
+{
+    width: 1263px;
+    height: 772px;
+    background: #192939;
+    border-radius: 5px;
+    position: relative;
+    left: 88px;
+    top: 127px;
+    display: none;
+}
+
+#total-macarrao
+{
+    width: 1263px;
+    height: 772px;
+    background: #192939;
+    border-radius: 5px;
+    position: relative;
+    left: 88px;
+    top: 127px;
+    display: none;
+}
+
+.pastel
+{
+    position: relative;
+    width: 183px;
+    height: 59px;
+    left: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+
+}
+
+.cima{
+    display: flex;
+}
+
+.modo-preparo
+{
+    position: relative;
+    left: 800px;
+    width: 202px;
+    height: 29px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+li{
+    
+    
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+    text-align: center;
+    width: 952.78px;
+    height: 60px;
+    margin-top: 40px;
+    position: relative;
+    left: 90px;
+}

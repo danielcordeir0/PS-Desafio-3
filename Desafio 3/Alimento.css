@@ -1,0 +1,192 @@
+#Alimento-pastel
+{
+    width: 1263px;
+    height: 772px;
+    background: #192939;
+    border-radius: 5px;
+    position: relative;
+    left: 88px;
+    top: 127px;
+    display: none;
+}
+
+#Alimento-churros
+{
+    width: 1263px;
+    height: 772px;
+    background: #192939;
+    border-radius: 5px;
+    position: relative;
+    left: 88px;
+    top: 127px;
+    display: none;
+}
+
+#Alimento-burg
+{
+    width: 1263px;
+    height: 772px;
+    background: #192939;
+    border-radius: 5px;
+    position: relative;
+    left: 88px;
+    top: 127px;
+    display: none;
+}
+
+#Alimento-macarrao
+{
+    width: 1263px;
+    height: 772px;
+    background: #192939;
+    border-radius: 5px;
+    position: relative;
+    left: 88px;
+    top: 127px;
+    display: none;
+}
+
+.pastel
+{
+    position: relative;
+    width: 183px;
+    height: 59px;
+    left: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+    
+    color: #FFFFFF;
+
+}
+
+.cima{
+    display: flex;
+}
+.pastel-img
+{
+    position: relative;
+    width: 1015px;
+    height: 468px;
+    left: 100px;
+    top: 40px;
+    background: url(pastel-frito-brasileiro_11579-32.jpg);
+    border-radius: 5px;
+}
+
+
+.box-alimento{
+    position: relative;
+    left: 830px;
+    top: 30px;
+    width: 200px;
+    height: 42px;
+    background: #0B7373;
+    background-color: #0B7373;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    appearance: none;
+    
+
+}
+.box-alimento:hover{
+    border: none;
+    cursor: pointer;
+    
+}
+
+.seta-menu-alimento{
+    position: relative;
+    left: 790px;
+    top: 40px;
+    width: 20px;
+    height: 20px;
+    background: url(image.png);
+    transform: rotate(-180deg);
+}
+
+.baixo{
+   
+    display: flex;
+}
+.tempo-preparo{
+    position: relative;
+    width: 460px;
+    height: 97px;
+    left: 100px;
+    top: 60px;
+    background: #0B7373;
+    border-radius: 5px;
+
+}
+.tempo-letras h1{
+    position: relative;
+    left: 150px;
+    width: 217px;
+    height: 29px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+.tempo-preparo img{
+    width: 44px;
+    height: 44px;
+    background: url(image.png);
+    position: relative;
+    bottom: 80px;
+    left: 60px;
+}
+
+.Rendimento{
+    position: relative;
+    width: 460px;
+    height: 97px;
+    left: 196px;
+    top: 60px;
+    background: #0B7373;
+    border-radius: 5px;
+}
+
+.Rendimento h1{
+    position: relative;
+    left: 150px;
+    width: 217px;
+    height: 29px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.Rendimento img{
+    width: 44px;
+    height: 44px;
+    background: url(image.png);
+    position: relative;
+    bottom: 80px;
+    left: 60px;
+}
+
+.porções{
+width: 158px;
+height: 29px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 29px;
+color: #FFFFFF;
+
+}

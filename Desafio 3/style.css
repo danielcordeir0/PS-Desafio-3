@@ -1,0 +1,281 @@
+
+#home{
+    display: grid;
+}
+
+body
+{
+    width: 1000px;
+    display: grid;
+   
+  
+}
+header
+{
+    background: #0B7373;
+    position: absolute;
+    display: flex;
+    width: 1490px;
+    top: 0;
+    left: 0;
+    
+    
+    
+}
+
+header h1{
+    color: aliceblue;
+    text-shadow: 2px 2px  rgb(32, 255, 255);
+    font-family: 'Kavoon';
+    font-style: normal;
+    position: relative;
+    left: 30px;
+}
+
+ header input{
+    display: block;
+    border-radius: 30px;
+    height: 60px;
+    outline: none;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    left: 60%;
+    width: 200px;
+    
+ }
+#botao
+{
+    
+    display: block;
+    position: relative;
+    left: 60% ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.botaoreceita:hover{
+    cursor: pointer;
+    color: #0DC2C4;
+    border: none;
+}
+
+.botaoreceita{
+    position: relative;
+    top: 20%;
+    right: 30%;
+    border: none;
+    background: none;
+    color: aliceblue;
+    display: block  ;
+}
+.icone{
+   display: block;
+   position: relative;
+   top: 20%;
+   left: 30%;
+   color: aliceblue;
+   width: 44px;
+   height: 44px;
+}
+
+#voltar{
+    display: none;
+
+  
+}
+
+#voltar img{
+    height: 81px;
+    
+}
+
+#voltar button
+{
+    position: relative;
+    width: 81x;
+    height: 81px;
+    left: 970px;
+    border: none;
+    background: none;
+    
+}
+
+#voltar button:hover{
+    cursor: pointer;
+}
+
+#voltar img:hover{
+    width: 90px;
+    height: 81px;
+}
+
+body section
+{
+    background: #192939;
+    top: 80px;
+    width: 1000px;
+    height: 900px;
+    left: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+  
+  
+}
+
+.card1{
+    border-style: solid;
+    width: 367.21px;
+    height:  349.18px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   position: relative;
+   left:65px;
+   margin: 10px 0px;
+   background-color: aliceblue;
+   border-radius: 22px;
+}
+
+.comida
+{
+    position: relative;
+     width: 100%;
+     display: block;
+     border-radius: 19px;
+
+}
+
+.macarrao{
+    position: relative;
+     width: 100%;
+     height: 242.23px;
+     display: block;
+     border-radius: 19px;
+}
+
+.receita
+{
+    font-size: medium;
+    background-color:  rgb(2, 172, 172);
+    border-radius:40px;
+    display: block;
+    width: 50%;
+    height: 65px;
+    text-align: center;
+    border: solid;
+    position: relative;
+    top: 10%;
+    left: 7%;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.receita:hover{
+    border: solid;
+    background-color:#0B7373;
+    cursor: pointer;
+}
+
+.receita-macarrao
+{
+    font-size: medium;
+    background-color:  rgb(2, 172, 172);
+    border-radius:40px;
+    display: block;
+    width: 50%;
+    height: 65px;
+    text-align: center;
+    border: solid;
+    position: relative;
+    top: 5%;
+    left: 7%;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.receita-macarrao:hover{
+    border: solid;
+    background-color:#0B7373;
+    cursor: pointer;
+}
+
+.minutos{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    position: relative;
+    top: 13%;
+   
+    
+}
+
+.tempo
+{
+   height: 40px;
+   position: relative;
+   top: 30%;
+   left: 20%;
+}
+
+.minutos-macarrao{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    position: relative;
+ 
+   
+    
+}
+
+.tempo-macarrao
+{
+   height: 40px;
+   position: relative;
+   top: 20%;
+   left: 20%;
+}
+
+.rodape
+{
+    color: aliceblue;
+    background: #0DC2C4;
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    top:957px;
+}
+
+.rodape h1{
+    text-align: center;
+    position: relative;
+    right: 80px;
+}
+
+.box-menu{
+    position: relative;
+    left: 830px;
+    top: 30px;
+    width: 200px;
+    height: 42px;
+    background: #0B7373;
+    background-color: #0B7373;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    appearance: none;
+
+}
+
+.box-menu:hover{
+    border: none;
+    
+}
+
+.seta-menu-menu{
+    position: relative;
+    left: 790px;
+    top: 40px;
+    width: 20px;
+    height: 20px;
+    background: url(image.png);
+    transform: rotate(-180deg);
+}

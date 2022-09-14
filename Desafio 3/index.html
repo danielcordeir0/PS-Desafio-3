@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Emilio e Daniel Cordeiro</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="formulario.css">
+<link rel="stylesheet" href="preparo.css">
+<link rel="stylesheet" href="Alimento.css">
+<link rel="stylesheet" href="ingredientes.css">
+<header>
+    <h1> Receitas faceis</h1>
+    <div id = "botao">
+    <button class =" botaoreceita" onclick="openblocks('formulario')">
+        <img src="leitura.png" alt="icone" class = "icone">
+        Envie sua receita
+    </button> 
+    </div>
+    <input type="Search"placeholder="Pesquisa">
+    <div id ="voltar"> 
+        <button onclick=" closeblocks('home','total-pastel','total-burg','total-churros','total-macarrao','botao','voltar','Alimento-pastel','Alimento-burg','Alimento-churros','Alimento-macarrao','ingredientes-pastel','ingredientes-burg','ingredientes-churros','ingredientes-macarrao')">
+        <img src="c3466eea3b0c418e10789650313706fc.png" alt="voltar">
+        </button>
+    </div>
+</header>
+<body>
+    <section id = "home">
+        <div class = "card1">
+            <img src="whatsapp-image-2018-08-16-at-19-59-49-1534878741.jpeg" alt="lanche" class = "comida">
+            <div>
+            <img src="tempo.png" alt="tempo" class = "tempo">
+            <h1 class = "minutos">20 mim</h1>
+            </div>
+            <button class = "receita" onclick="openblocks('home','Alimento-burg','botao','voltar')" >Ver Receita</button>
+        </div>
+
+        <div class = "card1">
+            <img src="img-pastel.jpeg" alt="lanche" class = "comida">
+            <div>
+            <img src="tempo.png" alt="tempo" class = "tempo">
+            <h1 class = "minutos">45 mim</h1>
+            </div>
+            <button class = "receita" onclick="openblocks('home','Alimento-pastel','botao','voltar')">Ver Receita</button>
+        </div>
+
+         <div class = "card1">
+            <img src="churros.png" alt="lanche" class = "comida">
+            <div>
+            <img src="tempo.png" alt="tempo" class = "tempo">
+            <h1  class = "minutos">40 mim</h1>
+            </div>
+            <button class = "receita "onclick="openblocks('home','Alimento-churros','botao','voltar')">Ver Receita</button>
+        </div>
+
+        <div class = "card1">
+            <img src="macarrao.png" alt="lanche" class = "macarrao">
+            <div>
+            <img src="tempo.png" alt="tempo" class = "tempo-macarrao">
+            <h1 class = "minutos-macarrao">55 mim</h1>
+            </div>
+            <button class = "receita-macarrao" onclick="openblocks('home','Alimento-macarrao','botao','voltar')">Ver Receita</button>
+        </div>
+    </section>
+    <div class = "rodape">
+        <h1>feito com  ❤ por antonio e daniel</h1>
+     </div>
+
+  <!-- ----------------FORMULARIO----------------------- -->
+   
+ 
+  <div id = "formulario">
+    <div class = "letras">
+    <div class = "nome">
+        <h1>Nome</h1>
+        <input type="text" class = "no">
+        <h1>Sobrenome</h1>
+        <input type="text" class = "sobre">
+    </div>
+
+    <div class = "re">
+        <h1>Nome da receita</h1>
+        <input type="text">
+    </div>
+
+    <div class ="imagem">
+        <label for="arquivo">Insira uma imagem</label>
+        <input type="file" name="img" id="arquivo" accept="image/*">
+    </div>
+    <h4>Digite a receita e seu modo de preparo e ingredientes</h4>
+    <input type="text" class = "descrição">
+</div>
+<button class = "enviar">
+    enviar
+</button>
+</div>
+ <!-- ----------------PREPARO----------------------- -->
+<div id = "total-pastel">
+    <div class = "cima">
+    <h1 class = "pastel">Pastel Frito</h1>
+    <select id="box-menu-pastel"  class="box-menu" onchange="getSelectValueModopastel('ingredientes-pastel','Alimento-pastel','botao','voltar','total-pastel');">
+        <option value="Prato">Selecione</option>
+        <option value="Prato" >Prato</option>
+        <option value="Ingre"  >Ingredientes</option>
+        <option value="Modo" >Modo-de-preparo</option>
+    </select>
+    <img src="seta-menu.png" alt="seta-menu" class ="seta-menu-menu">
+    </div>
+
+    <ol>
+       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+
+       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+
+       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+
+       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+
+       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    </ol>
+</div>
+<!---Burg-->
+<body>
+    <div id = "total-burg">
+        <div class = "cima">
+        <h1 class = "pastel">Hamburger Caseiro</h1>
+        <select id="box-menu-burg" class="box-menu"onchange="getSelectValueModoburg('ingredientes-burg','Alimento-burg','botao','voltar','total-burg');">
+            <option value="Prato" >Selecione</option>
+            <option value="Prato" >Prato</option>
+            <option value="Ingre" >Ingredientes</option>
+            <option value="Modo" >Modo-de-preparo</option>
+        </select>
+        <img src="seta-menu.png" alt="seta-menu" class ="seta-menu-menu">
+        </div>
+    
+        <ol>
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+        </ol>
+    </div>
+    <!---Churros-->
+    <div id = "total-churros">
+        <div class = "cima">
+        <h1 class = "pastel">Churros</h1>
+        <select id="box-menu-churros"  class="box-menu" onchange="getSelectValueModochurros('ingredientes-churros','Alimento-churros','botao','voltar','total-churros');">
+            <option value="Prato" >Selecione</option>
+            <option value="Prato" >Prato</option>
+            <option value="Ingre" >Ingredientes</option>
+            <option value="Modo" >Modo-de-preparo</option>
+        </select>
+        <img src="seta-menu.png" alt="seta-menu" class ="seta-menu-menu">
+        </div>
+    
+        <ol>
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+        </ol>
+    </div>
+    
+    <!---Macarrao-->
+    <div id = "total-macarrao">
+        <div class = "cima">
+        <h1 class = "pastel">Macarrão</h1>
+        <select id="box-menu-macarrao"  class="box-menu" onchange="getSelectValueModomacarrao('ingredientes-macarrao','Alimento-macarrao','botao','voltar','total-macarrao');">
+            <option value="Prato" >Selecione</option>
+            <option value="Prato" >Prato</option>
+            <option value="Ingre" >Ingredientes</option>
+            <option value="Modo" >Modo-de-preparo</option>
+        </select>
+        <img src="seta-menu.png" alt="seta-menu" class ="seta-menu-menu">
+        </div>
+    
+        <ol>
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+    
+           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut provident deserunt natus dolore blanditiis necessitatibus dolore</li>
+        </ol>
+    </div>
+
+<!-- ----------------IMAGEM ALIMENTO----------------------- -->
+<div id = "Alimento-pastel">
+    <div class = "cima">
+    <h1 class = "pastel">Pastel Frito</h1>
+    <select id="box-alimento-pastel" class="box-alimento" onchange="getSelectValueAlimentopastel('ingredientes-pastel','Alimento-pastel','botao','voltar','total-pastel');">
+        <option value="Prato" >Selecione</option>
+        <option value="Prato" >Prato</option>
+        <option value="Ingre">Ingredientes</option>
+        <option value="Modo" >Modo-de-preparo</option>
+    </select>
+    <img src="seta-menu.png" alt="seta-menu" class ="seta-menu-alimento">
+</div>
+    <img src="img-pastel.jpeg" alt="pastel" class = "pastel-img">
+    <div class = "baixo">
+        <div class ="tempo-preparo">
+            <div class ="tempo-letras">
+            <h1>Tempo de Preparo</h1>
+            <h1>60 min</h1>
+            </div>
+            <img src="tempo.png" alt="tempo">
+        </div>
+
+        <div class ="Rendimento">
+            <div class ="rendi-letras">
+            <h1 class = "rendi-baixo">Rendimento</h1>
+            <h1 class = "porções">30 Porçôes</h1>
+            </div>
+            <img src="talheres.png" alt="icone">
+        </div>
+
+    </div>
+</div>
+<!---Burg-->
+<div id = "Alimento-burg">
+    <div class = "cima">
+    <h1 class = "pastel">Hamburger Caseiro</h1>
+    <select id="box-alimento-burg" class="box-alimento" onchange="getSelectValueAlimentoburg('ingredientes-burg','Alimento-burg','botao','voltar','total-burg');">
+        <option value="Prato" >Selecione</option>
+        <option value="Prato" >Prato</option>
+        <option value="Ingre" >Ingredientes</option>
+        <option value="Modo" >Modo-de-preparo</option>
+    </select>
+    <img src="seta-menu.png" alt="seta-menu" class ="seta-menu-alimento">
+</div>
+    <img src="whatsapp-image-2018-08-16-at-19-59-49-1534878741.jpeg" alt="pastel" class = "pastel-img">
+    <div class = "baixo">
+        <div class ="tempo-preparo">
+            <div class ="tempo-letras">
+            <h1>Tempo de Preparo</h1>
+            <h1>20 min</h1>
+            </div>
+            <img src="tempo.png" alt="tempo">
+        </div>
+
+        <div class ="Rendimento">
+            <div class ="rendi-letras">
+            <h1 class = "rendi-baixo">Rendimento</h1>
+            <h1 class = "porções">1 Porção</h1>
+            </div>
+            <img src="talheres.png" alt="icone">
+        </div>
+
+    </div>
+</div>
+<!---Churros-->
+<body>
+    <div id = "Alimento-churros">
+        <div class = "cima">
+        <h1 class = "pastel">Churros</h1>
+        <select id="box-alimento-churros" class="box-alimento" onchange="getSelectValueAlimentochurros('ingredientes-churros','Alimento-churros','botao','voltar','total-churros');">
+            <option value="Prato" >Selecione</option>
+            <option value="Prato" >Prato</option>
+            <option value="Ingre" >Ingredientes</option>
+            <option value="Modo" >Modo-de-preparo</option>
+        </select>
+        <img src="seta-menu.png" alt="seta-menu" class ="seta-menu-alimento">
+    </div>
+        <img src="churros.png" alt="imagem" class = "pastel-img">
+        <div class = "baixo">
+            <div class ="tempo-preparo">
+                <div class ="tempo-letras">
+                <h1>Tempo de Preparo</h1>
+                <h1>40 min</h1>
+                </div>
+                <img src="tempo.png" alt="tempo">
+            </div>
+    
+            <div class ="Rendimento">
+                <div class ="rendi-letras">
+                <h1 class = "rendi-baixo">Rendimento</h1>
+                <h1 class = "porções">20 Porçôes</h1>
+                </div>
+                <img src="talheres.png" alt="icone">
+            </div>
+    
+        </div>
+    </div>
+<!---Macarrao-->
+<div id = "Alimento-macarrao">
+    <div class = "cima">
+    <h1 class = "pastel">Macarrão</h1>
+    <select id="box-alimento-macarrao" class="box-alimento" onchange="getSelectValueAlimentomacarrao('ingredientes-macarrao','Alimento-macarrao','botao','voltar','total-macarrao');">
+        <option value="Prato" >Selecione</option>
+        <option value="Prato" >Prato</option>
+        <option value="Ingre" >Ingredientes</option>
+        <option value="Modo" >Modo-de-preparo</option>
+    </select>
+    <img src="seta-menu.png" alt="seta-menu" class ="seta-menu-alimento">
+</div>
+    <img src="macarrao.png" alt="imagem" class = "pastel-img">
+    <div class = "baixo">
+        <div class ="tempo-preparo">
+            <div class ="tempo-letras">
+            <h1>Tempo de Preparo</h1>
+            <h1>34 min</h1>
+            </div>
+            <img src="tempo.png" alt="tempo">
+        </div>
+
+        <div class ="Rendimento">
+            <div class ="rendi-letras">
+            <h1 class = "rendi-baixo">Rendimento</h1>
+            <h1 class = "porções">2 Porçôes</h1>
+            </div>
+            <img src="talheres.png" alt="icone">
+        </div>
+
+    </div>
+</div>
+<!-- ----------------INGREDIENTES----------------------- -->
+
+<div id = "ingredientes-pastel">
+    <div class = "cima">
+    <h1 class = "pastel">Pastel Frito</h1>
+    <img src="ingredientes.png" alt="icone" class ="icone-ingre">
+    <h1 class="ingre-h1">Ingredientes</h1>
+    <select id="box-ingre-pastel" class="box-ingre" onchange="getSelectValueIngrepastel('ingredientes-pastel','Alimento-pastel','botao','voltar','total-pastel');">
+        <option value="Prato" >Selecione</option>
+        <option value="Prato" >Prato</option>
+        <option value="Ingre" >Ingredientes</option>
+        <option value="Modo" >Modo-de-preparo</option>
+    </select>
+    <img src="seta-menu.png" alt="seta-menu" class ="seta-menu">
+    </div>
+
+    <ol class = "ol-ingre">
+       <li>3 xícaras de farinha de trigo </li>
+
+       <li>1 xícara de água morna (ou um pouco mais)</li>
+
+       <li>3 colheres (sopa) de óleo (de soja, milho, girassol ou algodão)</li>
+
+       <li>1 colher (sopa) de aguardente</li>
+
+       <li>1 colher (sopa) rasa de sal</li>
+
+       <li>farinha de trigo para trabalhar a massa</li>
+    </ol>
+</div>
+<!---Burg-->
+<div id = "ingredientes-burg">
+    <div class = "cima">
+    <h1 class = "pastel">Hamburger Caseiro</h1>
+    <img src="ingredientes.png" alt="icone" class ="icone-ingre">
+    <h1 class="ingre-h1">Ingredientes</h1>
+    <select id="box-ingre-burg" class="box-ingre" onchange="getSelectValueIngreburg('ingredientes-burg','Alimento-burg','botao','voltar','total-burg');">
+        <option value="Prato" >Selecione</option>
+        <option value="Prato" >Prato</option>
+        <option value="Ingre" >Ingredientes</option>
+        <option value="Modo" >Modo-de-preparo</option>
+    </select>
+    <img src="seta-menu.png" alt="seta-menu" class ="seta-menu">
+    </div>
+
+    <ol class = "ol-ingre">
+       <li>1 kg de carne moída (de preferência patinho)</li>
+
+       <li>1 sachê de creme de cebola</li>
+
+       <li>1 cebola media picada</li>
+
+       <li>4 dentes de alho picado</li>
+
+       <li>cebolinha a gosto</li>
+       
+       <li>sal e pimenta a gosto</li>
+    </ol>
+</div>
+<!---Churros-->
+<div id = "ingredientes-churros">
+    <div class = "cima">
+    <h1 class = "pastel">Churros</h1>
+    <img src="ingredientes.png" alt="icone" class ="icone-ingre">
+    <h1 class="ingre-h1">Ingredientes</h1>
+    <select id="box-ingre-churros" class="box-ingre" onchange="getSelectValueIngrechurros('ingredientes-churros','Alimento-churros','botao','voltar','total-churros');">
+        <option value="Prato" >Selecione</option>
+        <option value="Prato" >Prato</option>
+        <option value="Ingre" >Ingredientes</option>
+        <option value="Modo" >Modo-de-preparo</option>
+    </select>
+    <img src="seta-menu.png" alt="seta-menu" class ="seta-menu">
+    </div>
+
+    <ol class = "ol-ingre">
+        <li>300 g de farinha de trigo</li>
+    
+        <li>3 ovos</li>
+ 
+        <li>óleo para fritar</li>
+ 
+        <li>doce de leite</li>
+ 
+        <li>2 colheres (sopa) de margarina ou manteiga sem sal</li>
+    </ol>
+</div>
+
+<!---Macarrao-->
+<div id = "ingredientes-macarrao">
+    <div class = "cima">
+    <h1 class = "pastel">Macarrão</h1>
+    <img src="ingredientes.png" alt="icone" class ="icone-ingre">
+    <h1 class="ingre-h1">Ingredientes</h1>
+    <select id="box-ingre-macarrao" class="box-ingre" onchange="getSelectValueIngremacarrao('ingredientes-macarrao','Alimento-macarrao','botao','voltar','total-macarrao');">
+        <option value="Prato" >Selecione</option>
+        <option value="Prato" >Prato</option>
+        <option value="Ingre" >Ingredientes</option>
+        <option value="Modo" >Modo-de-preparo</option>
+    </select>
+    <img src="seta-menu.png" alt="seta-menu" class ="seta-menu">
+    </div>
+
+    <ol class = "ol-ingre">
+        <li>500 g de macarrão (qualquer tipo)</li>
+    
+        <li>1 pacote de molho de tomate</li>
+ 
+        <li>1 fio de óleo</li>
+ 
+        <li>sal a gosto</li>
+ 
+        <li>800 ml de água</li>
+    </ol>
+</div>
+
+<script src="java.js"></script>
+</body>
+
+</html>
